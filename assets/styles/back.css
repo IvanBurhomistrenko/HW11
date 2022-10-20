@@ -1,0 +1,28 @@
+.back {
+    margin-bottom: 44px;
+}
+
+.back_link {
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    padding-left: 22px;
+    position: relative;
+    text-decoration: none;
+}
+
+.back_link::before {
+    content: '';
+    background-image: url(../images/back_arrow.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+}

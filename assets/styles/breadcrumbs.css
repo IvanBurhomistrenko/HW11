@@ -1,0 +1,30 @@
+.breadcrumbs {
+    margin-bottom: 30px;
+}
+
+.breadcrumbs_items {
+    display: flex;
+}
+
+.breadcrumbs_item {
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #BDBDBD;
+    position: relative;
+    text-decoration: none;
+    margin-right: 35px;
+}
+
+.breadcrumbs_item:not(:last-child)::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #BDBDBD;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20px;
+}
