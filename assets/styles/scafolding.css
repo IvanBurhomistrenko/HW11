@@ -3,10 +3,9 @@
 }
 
 .wrapper {
-    width: 1300px;
+    width: 1320px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid red;
 }
 
 @font-face {
