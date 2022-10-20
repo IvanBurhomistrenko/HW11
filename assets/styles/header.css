@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 45px;
 }
 
 .tel {
@@ -79,4 +80,43 @@
 
 .user {
     margin: 15px 15px 15px 0px;
+}
+
+.nav {
+   display: flex; 
+}
+
+.link {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #4F4F4F;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+.link_dropdown {
+    position: relative;
+    padding-right: 19px;
+}
+
+.link_dropdown::after {
+    content: '';
+    background-image: url(../images/arrow_down.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -7.5px;
+
+}
+
+.link:last-child {
+    margin-right: 0;
 }
