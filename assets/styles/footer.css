@@ -1,0 +1,54 @@
+.footer {
+    background-color: #333333;
+}
+
+.social_info {
+    padding: 100px 0px 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment {
+    margin-right: 47px;
+    text-decoration: none;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.payment:last-child {
+    margin-right: 0px;
+}
+
+.twit {
+    margin-right: 20px;
+}
+
+.tel_footer {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding-left: 34px;
+    position: relative;
+    text-decoration: none;
+}
+
+.tel_footer::before {
+    content: "";
+    background-image: url(../images/footer_tel.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+}
