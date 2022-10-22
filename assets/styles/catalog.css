@@ -5,12 +5,19 @@
 
 .drop_catalog {
     display: none;
-    position: absolute;
     min-width: 284px;
     background: #FFFFFF;
     box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
+}
+
+.catalog_space_box {
+    position: absolute;
     z-index: 1;
+}
+
+.catalog_space {
+    height: 24px;
 }
 
 .catalog:hover .drop_catalog {
