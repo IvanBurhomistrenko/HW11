@@ -1,7 +1,18 @@
 .user {
-    margin: 15px 0px 15px 0px;
     position: relative;
     display: inline-block;
+}
+
+.user_icon {
+    background-image: url(../images/user.png);
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+
+.user_icon:hover {
+    background-image: url(../images/active_user.png);
 }
 
 .drop_content {
@@ -10,17 +21,13 @@
     box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     left: -254px;
-    top: 60px
+    top: 60px;
 }
 
 .drop_content_space_box {
     position: absolute;
     left: -254px;
-}
-
-.drop_content_space {
-    height: 30px;
-    left: -254px;
+    padding-top: 34px;
 }
 
 .drop_content a {

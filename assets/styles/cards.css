@@ -87,15 +87,20 @@
     color: #333333;
 }
 
+.card_form {
+    display: flex;
+    align-items: center;
+}
+
 .card_packaging {
     display: flex;
-    margin-bottom: 25px;
+    flex-wrap: wrap;
+    row-gap: 25px;
 }
 
 .card_package {
     width: 68px;
     height: 29px;
-    /* padding: 3px 11px; */
     background-color: transparent; 
     border: none;
     text-align: center;
@@ -132,6 +137,7 @@
     border: 1px solid rgba(5, 175, 52, 0.53);
     border-radius: 10px;
     text-decoration: none;
+    margin-right: 68px;
 }
 
 .card_add_cart {

@@ -14,10 +14,7 @@
 .catalog_space_box {
     position: absolute;
     z-index: 1;
-}
-
-.catalog_space {
-    height: 24px;
+    padding-top: 24px;
 }
 
 .catalog:hover .drop_catalog {

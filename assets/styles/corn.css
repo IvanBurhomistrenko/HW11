@@ -72,9 +72,9 @@
     padding: 20px 36px 47px 30px;
 }
 
-.corn_type:last-child::after {
+.corn_arrow:last-child::after {
     content: '';
-    background-image: url(../images/bird_page/left_arrow.png);
+    background-image: url(../images/bird.page/left_arrow.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,9 +86,9 @@
     margin-top: -9px;
 }
 
-.corn_type:last-child::before {
+.corn_arrow:last-child::before {
     content: '';
-    background-image: url(../images/bird_page/right_arrow.png);
+    background-image: url(../images/bird.page/right_arrow.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -100,9 +100,9 @@
     margin-top: -9px;
 }
 
-.feed_type:last-child::after {
+.feed_arrow:last-child::after {
     content: '';
-    background-image: url(../images/bird_page/left_arrow.png);
+    background-image: url(../images/bird.page/left_arrow.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -114,9 +114,9 @@
     margin-top: -9px;
 }
 
-.feed_type:last-child::before {
+.feed_arrow:last-child::before {
     content: '';
-    background-image: url(../images/bird_page/right_arrow.png);
+    background-image: url(../images/bird.page/right_arrow.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

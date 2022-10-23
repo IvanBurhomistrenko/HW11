@@ -20,6 +20,10 @@
     position: relative;
 } 
 
+.page:hover {
+    color: #219653;
+}
+
 .page:last-child {
     padding-right: 41px;
 }

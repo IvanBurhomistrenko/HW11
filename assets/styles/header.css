@@ -49,13 +49,13 @@
 }
 
 .cart {
-    margin: 15px 15px 15px 0px;
     position: relative;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
     color: #FFFFFF;
+    margin-right: 15px;
 }
 
 .user_info {
@@ -150,7 +150,7 @@
     padding-left: 20px;
     color: black;
     padding-right: 50px;
-    background-image: url(/assets/images/Search.png);
+    background-image: url(/assets/images/search.png);
     background-size: 24px;
     background-repeat: no-repeat;
     background-position: right 23px center;

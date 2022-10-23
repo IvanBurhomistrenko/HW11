@@ -17,6 +17,10 @@
     margin-right: 35px;
 }
 
+.breadcrumbs_item:last-child {
+    margin-right: 0px;
+}
+
 .breadcrumbs_item:not(:last-child)::after {
     content: '';
     width: 6px;

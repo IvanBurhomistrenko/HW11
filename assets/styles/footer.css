@@ -5,8 +5,25 @@
 .social_info {
     padding: 100px 0px 100px 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-right: 466px;
+    margin-left: 432px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.payment_info {
+    display: flex;
+    justify-content: center;
 }
 
 .payment {
@@ -34,7 +51,7 @@
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
-    padding-left: 34px;
+    padding-left: 31px;
     position: relative;
     text-decoration: none;
 }
