@@ -3,28 +3,36 @@
 }
 
 @mixin wight_block {
-    @include width(1320px);
     background-color: #FFFFFF;
-    border: 1px solid #F2F2F2;
+    border-top: 1px solid #F2F2F2;
+    border-left: 1px solid #F2F2F2;
+    border-right: 1px solid #F2F2F2;
 }
 
-.basket_list_top {
-    @include wight_block;
+.basket {
+    font-family: 'Gilroy';
+    font-style: normal;
+}
+
+.basket_list:first-child {
     border-radius: 10px 10px 0 0;
 }
 
-.basket_list_mid {
+.basket_list:last-child {
+    border-radius: 0 0 10px 10px;
+    border-bottom: 1px solid #F2F2F2;
+    border-top: 0
+}
+
+.basket_list {
     @include wight_block;
 }
 
 .basket_list_green {
-    @include width(1320px);
     background-color: #3FCF5E;
-}
-
-.basket_list_end {
-    @include wight_block;
-    border-radius: 0 0 10px 10px;
+    padding: 40px 172px;
+    border-left: 1px solid #F2F2F2;
+    border-right: 1px solid #F2F2F2;
 }
 
 .basket_card {
@@ -40,8 +48,6 @@
 
 .price {
     display: flex;
-    font-family: 'Gilroy';
-    font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
@@ -50,8 +56,6 @@
 }
 
 .cost_for_one {
-    font-family: 'Gilroy';
-    font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
@@ -60,8 +64,6 @@
 }
 
 .price_number {
-    font-family: 'Gilroy';
-    font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
@@ -72,8 +74,6 @@
 .name_h1 {
     margin-top: 0;
     margin-bottom: 9px;
-    font-family: 'Gilroy';
-    font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
@@ -83,8 +83,6 @@
 .code {
     margin-top: 0px;
     margin-bottom: 52px;
-    font-family: 'Gilroy';
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
@@ -97,8 +95,6 @@
 
 .amount_text {
     text-align: center;
-    font-family: 'Gilroy';
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 130%;
@@ -113,35 +109,27 @@
 }
 
 .plus {
-    content: '';
+    border: 1px solid #00C620;
+    border-radius: 5px;
     background-image: url(../images/basket_page/plus.png);
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
-    width: 32px;
-    height: 32px;
-    border: 0;
+    background-position: center;
+    padding: 15px 15px;
+    background-color: #FFFFFF;
 }
 
 .minus {
-    content: '';
+    border: 1px solid #00C620;
+    border-radius: 5px;
     background-image: url(../images/basket_page/minus.png);
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
-    width: 32px;
-    height: 32px;
-    border: 0;
+    background-position: center;
+    padding: 15px 15px;
+    background-color: #FFFFFF;
 }
-
-.plus[value="1"] {color: transparent;};
-
-.minus[value="1"] {color: transparent;};
 
 .plus_minus p {
     margin: 0 20px 0 20px;
-    font-family: 'Gilroy';
-    font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
@@ -150,8 +138,6 @@
 }
 
 .total {
-    font-family: 'Gilroy';
-    font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
@@ -160,12 +146,11 @@
 }
 
 .fund {
-    padding: 40px 693px 50px 172px;
+
+    width: 456px;
 }
 
 .fund_text {
-    font-family: 'Gilroy';
-    font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
@@ -186,8 +171,6 @@
     border: 1px solid #FFFFFF;
     border-radius: 10px;
     padding: 15px 15px 15px 15px;
-    font-family: 'Gilroy';
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
@@ -198,8 +181,6 @@
 .donation_button {
     background: #FFFFFF;
     border-radius: 10px;
-    font-family: 'Gilroy';
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
@@ -218,8 +199,6 @@
 .pay_btn {
     background-color: #3FCF5E;
     border-radius: 10px;
-    font-family: 'Gilroy';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;

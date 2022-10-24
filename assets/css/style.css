@@ -1,242 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-.wrapper {
-  width: 1320px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  src: url("Gilroy-Semibold.eot");
-  src: local("../Font/Gilroy/Gilroy Semibold"), local("Gilroy-Semibold"), url("../Font/Gilroy/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"), url("../Font/Gilroy/Gilroy-Semibold.woff2") format("woff2"), url("../Font/Gilroy/Gilroy-Semibold.woff") format("woff"), url("../Font/Gilroy/Gilroy-Semibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gilroy";
-  src: url("Gilroy-Medium.eot");
-  src: local("../Font/Gilroy/Gilroy Medium"), local("Gilroy-Medium"), url("../Font/Gilroy/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../Font/Gilroy/Gilroy-Medium.woff2") format("woff2"), url("../Font/Gilroy/Gilroy-Medium.woff") format("woff"), url("../Font/Gilroy/Gilroy-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gilroy";
-  src: url("Gilroy-Bold.eot");
-  src: local("../Font/Gilroy/Gilroy Bold"), local("Gilroy-Bold"), url("../Font/Gilroy/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../Font/Gilroy/Gilroy-Bold.woff2") format("woff2"), url("../Font/Gilroy/Gilroy-Bold.woff") format("woff"), url("../Font/Gilroy/Gilroy-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("Montserrat-SemiBold.eot");
-  src: local("../Font/Montserrat/Montserrat SemiBold"), local("Montserrat-SemiBold"), url("../Font/Montserrat/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("../Font/Montserrat/Montserrat-SemiBold.woff2") format("woff2"), url("../Font/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("../Font/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("Roboto-Medium.eot");
-  src: local("../Font/Roboto/Roboto Medium"), local("Roboto-Medium"), url("../Font/Roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../Font/Roboto/Roboto-Medium.woff2") format("woff2"), url("../Font/Roboto/Roboto-Medium.woff") format("woff"), url("../Font/Roboto/Roboto-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-.main_page1 {
-  background-color: #f9f9f9;
-  padding-top: 75px;
-  padding-bottom: 100px;
-}
-.main_page2 {
-  background-color: #f9f9f9;
-  padding-top: 75px;
-  padding-bottom: 219px;
-}
-.main_page3 {
-  background-color: #f9f9f9;
-  padding-top: 50px;
-  padding-bottom: 169px;
-}
-
-.header {
-  padding-top: 33px;
-  padding-bottom: 30px;
-  background-color: white;
-  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.05), inset 0px -5px 15px rgba(255, 255, 255, 0.44);
-}
-
-.header_top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 45px;
-}
-
-.tel {
-  font-size: 18px;
-  line-height: 21px;
-  color: black;
-  text-decoration: none;
-  margin-right: 60px;
-  position: relative;
-  padding-left: 25px;
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 400;
-}
-
-.tel::before {
-  content: "";
-  background-image: url(../images/tel.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  margin-top: -10px;
-}
-
-.tel img {
-  margin-right: 10px;
-}
-
-.header_info {
-  display: flex;
-  align-items: center;
-}
-
-.cart {
-  position: relative;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
-  color: #FFFFFF;
-  margin-right: 15px;
-  background-image: url(../images/basket.png);
-  display: block;
-  width: 30px;
-  height: 30px;
-  background-repeat: no-repeat;
-}
-
-.cart:hover {
-  background-image: url(../images/basket_page/cart.png);
-  display: block;
-  width: 30px;
-  height: 30px;
-  background-repeat: no-repeat;
-}
-
-.user_info {
-  display: flex;
-}
-
-.counter {
-  position: absolute;
-  top: -50%;
-  right: -50%;
-  display: flex;
-  background-color: #06D10E;
-  width: 20px;
-  height: 20px;
-  justify-content: center;
-  align-items: center;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
-  color: #FFFFFF;
-  border-radius: 50%;
-  transform: translate(-50%, 50%);
-}
-
-.nav {
-  display: flex;
-}
-
-.link {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  color: #4F4F4F;
-  margin-right: 40px;
-  text-decoration: none;
-}
-
-.link_dropdown {
-  position: relative;
-  padding-right: 19px;
-}
-
-.catalog:hover .link_dropdown::after {
-  content: "";
-  background-image: url(../images/active_arrow.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  margin-top: -7.5px;
-}
-
-.link_dropdown::after {
-  content: "";
-  background-image: url(../images/arrow_down.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  margin-top: -7.5px;
-}
-
-.link:last-child {
-  margin-right: 0;
-}
-
-.header_second_line {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.search {
-  width: 345px;
-  height: 54px;
-  background-color: #F2F2F2;
-  border: 1px solid #BDBDBD;
-  border-radius: 10px;
-  padding-left: 20px;
-  color: black;
-  padding-right: 50px;
-  background-image: url(../images/search.png);
-  background-size: 24px;
-  background-repeat: no-repeat;
-  background-position: right 23px center;
-}
-
-.search::placeholder {
-  font-family: "Gilroy";
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #828282;
-}
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -530,6 +291,245 @@ template {
   display: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-Semibold.eot");
+  src: local("../Font/Gilroy/Gilroy Semibold"), local("Gilroy-Semibold"), url("../Font/Gilroy/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"), url("../Font/Gilroy/Gilroy-Semibold.woff2") format("woff2"), url("../Font/Gilroy/Gilroy-Semibold.woff") format("woff"), url("../Font/Gilroy/Gilroy-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-Medium.eot");
+  src: local("../Font/Gilroy/Gilroy Medium"), local("Gilroy-Medium"), url("../Font/Gilroy/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../Font/Gilroy/Gilroy-Medium.woff2") format("woff2"), url("../Font/Gilroy/Gilroy-Medium.woff") format("woff"), url("../Font/Gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("Gilroy-Bold.eot");
+  src: local("../Font/Gilroy/Gilroy Bold"), local("Gilroy-Bold"), url("../Font/Gilroy/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../Font/Gilroy/Gilroy-Bold.woff2") format("woff2"), url("../Font/Gilroy/Gilroy-Bold.woff") format("woff"), url("../Font/Gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("Montserrat-SemiBold.eot");
+  src: local("../Font/Montserrat/Montserrat SemiBold"), local("Montserrat-SemiBold"), url("../Font/Montserrat/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("../Font/Montserrat/Montserrat-SemiBold.woff2") format("woff2"), url("../Font/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("../Font/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Medium.eot");
+  src: local("../Font/Roboto/Roboto Medium"), local("Roboto-Medium"), url("../Font/Roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../Font/Roboto/Roboto-Medium.woff2") format("woff2"), url("../Font/Roboto/Roboto-Medium.woff") format("woff"), url("../Font/Roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+.main_page1 {
+  background-color: #f9f9f9;
+  padding-top: 75px;
+  padding-bottom: 100px;
+}
+.main_page2 {
+  background-color: #f9f9f9;
+  padding-top: 75px;
+  padding-bottom: 219px;
+}
+.main_page3 {
+  background-color: #f9f9f9;
+  padding-top: 50px;
+  padding-bottom: 169px;
+}
+
+.header {
+  padding-top: 33px;
+  padding-bottom: 30px;
+  background-color: white;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.05), inset 0px -5px 15px rgba(255, 255, 255, 0.44);
+}
+
+.header_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.tel {
+  font-size: 18px;
+  line-height: 21px;
+  color: black;
+  text-decoration: none;
+  margin-right: 60px;
+  position: relative;
+  padding-left: 25px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tel::before {
+  content: "";
+  background-image: url(../images/tel.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.tel img {
+  margin-right: 10px;
+}
+
+.header_info {
+  display: flex;
+  align-items: center;
+}
+
+.cart {
+  position: relative;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  margin-right: 15px;
+  background-image: url(../images/basket.png);
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+
+.cart:hover {
+  background-image: url(../images/basket_page/cart.png);
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+
+.user_info {
+  display: flex;
+}
+
+.counter {
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  display: flex;
+  background-color: #06D10E;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  border-radius: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.nav {
+  display: flex;
+}
+
+.link {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #4F4F4F;
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+.link_dropdown {
+  position: relative;
+  padding-right: 19px;
+}
+
+.catalog:hover .link_dropdown::after {
+  content: "";
+  background-image: url(../images/active_arrow.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -7.5px;
+}
+
+.link_dropdown::after {
+  content: "";
+  background-image: url(../images/arrow_down.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -7.5px;
+}
+
+.link:last-child {
+  margin-right: 0;
+}
+
+.header_second_line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search {
+  width: 345px;
+  height: 54px;
+  background-color: #F2F2F2;
+  border: 1px solid #BDBDBD;
+  border-radius: 10px;
+  padding-left: 20px;
+  color: black;
+  padding-right: 50px;
+  background-image: url(../images/search.png);
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: right 23px center;
+}
+
+.search::placeholder {
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #828282;
+}
+
 .breadcrumbs_page {
   margin-bottom: 30px;
 }
@@ -796,48 +796,6 @@ template {
   padding-top: 100px;
 }
 
-.catalog {
-  position: relative;
-  display: inline-block;
-}
-
-.drop_catalog {
-  display: none;
-  min-width: 284px;
-  background: #FFFFFF;
-  box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-}
-
-.catalog_space_box {
-  position: absolute;
-  z-index: 1;
-  padding-top: 24px;
-}
-
-.catalog:hover .drop_catalog {
-  display: block;
-}
-
-.catalog_link {
-  margin-bottom: 30px;
-  text-decoration: none;
-  display: block;
-  font-family: "Gilroy";
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  color: #4F4F4F;
-}
-
-.catalog_link:last-child {
-  margin-bottom: 0px;
-}
-
-.catalog_menu {
-  padding: 21px 52px 34px 25px;
-}
-
 .footer {
   background-color: #333333;
 }
@@ -845,15 +803,16 @@ template {
 .social_info {
   padding: 100px 0px 100px 0px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .social {
-  display: flex;
-  justify-content: center;
-  margin-right: 466px;
-  margin-left: 432px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .contact {
@@ -1136,7 +1095,7 @@ template {
   background: #FFFFFF;
   box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  left: -254px;
+  right: 0;
   top: 60px;
 }
 
@@ -1251,29 +1210,33 @@ template {
   color: #219653;
 }
 
-.basket_list_top {
-  width: 1320px;
-  background-color: #FFFFFF;
-  border: 1px solid #F2F2F2;
+.basket {
+  font-family: "Gilroy";
+  font-style: normal;
+}
+
+.basket_list:first-child {
   border-radius: 10px 10px 0 0;
 }
 
-.basket_list_mid {
-  width: 1320px;
+.basket_list:last-child {
+  border-radius: 0 0 10px 10px;
+  border-bottom: 1px solid #F2F2F2;
+  border-top: 0;
+}
+
+.basket_list {
   background-color: #FFFFFF;
-  border: 1px solid #F2F2F2;
+  border-top: 1px solid #F2F2F2;
+  border-left: 1px solid #F2F2F2;
+  border-right: 1px solid #F2F2F2;
 }
 
 .basket_list_green {
-  width: 1320px;
   background-color: #3FCF5E;
-}
-
-.basket_list_end {
-  width: 1320px;
-  background-color: #FFFFFF;
-  border: 1px solid #F2F2F2;
-  border-radius: 0 0 10px 10px;
+  padding: 40px 172px;
+  border-left: 1px solid #F2F2F2;
+  border-right: 1px solid #F2F2F2;
 }
 
 .basket_card {
@@ -1289,8 +1252,6 @@ template {
 
 .price {
   display: flex;
-  font-family: "Gilroy";
-  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
@@ -1299,8 +1260,6 @@ template {
 }
 
 .cost_for_one {
-  font-family: "Gilroy";
-  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
@@ -1309,8 +1268,6 @@ template {
 }
 
 .price_number {
-  font-family: "Gilroy";
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
@@ -1321,8 +1278,6 @@ template {
 .name_h1 {
   margin-top: 0;
   margin-bottom: 9px;
-  font-family: "Gilroy";
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
@@ -1332,8 +1287,6 @@ template {
 .code {
   margin-top: 0px;
   margin-bottom: 52px;
-  font-family: "Gilroy";
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
@@ -1346,8 +1299,6 @@ template {
 
 .amount_text {
   text-align: center;
-  font-family: "Gilroy";
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 130%;
@@ -1362,39 +1313,27 @@ template {
 }
 
 .plus {
-  content: "";
+  border: 1px solid #00C620;
+  border-radius: 5px;
   background-image: url(../images/basket_page/plus.png);
-  background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
-  width: 32px;
-  height: 32px;
-  border: 0;
+  background-position: center;
+  padding: 15px 15px;
+  background-color: #FFFFFF;
 }
 
 .minus {
-  content: "";
+  border: 1px solid #00C620;
+  border-radius: 5px;
   background-image: url(../images/basket_page/minus.png);
-  background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
-  width: 32px;
-  height: 32px;
-  border: 0;
-}
-
-.plus[value="1"] {
-  color: transparent;
-}
-
-.minus[value="1"] {
-  color: transparent;
+  background-position: center;
+  padding: 15px 15px;
+  background-color: #FFFFFF;
 }
 
 .plus_minus p {
   margin: 0 20px 0 20px;
-  font-family: "Gilroy";
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
@@ -1403,8 +1342,6 @@ template {
 }
 
 .total {
-  font-family: "Gilroy";
-  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
@@ -1413,12 +1350,10 @@ template {
 }
 
 .fund {
-  padding: 40px 693px 50px 172px;
+  width: 456px;
 }
 
 .fund_text {
-  font-family: "Gilroy";
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
@@ -1439,8 +1374,6 @@ template {
   border: 1px solid #FFFFFF;
   border-radius: 10px;
   padding: 15px 15px 15px 15px;
-  font-family: "Gilroy";
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
@@ -1451,8 +1384,6 @@ template {
 .donation_button {
   background: #FFFFFF;
   border-radius: 10px;
-  font-family: "Gilroy";
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
@@ -1471,8 +1402,6 @@ template {
 .pay_btn {
   background-color: #3FCF5E;
   border-radius: 10px;
-  font-family: "Gilroy";
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
