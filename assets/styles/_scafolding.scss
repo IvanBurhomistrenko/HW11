@@ -69,13 +69,24 @@
 }
 
 .main {
-    background-color: #f9f9f9;
-    padding-top: 75px;
-    padding-bottom: 100px;
+    &_page1{
+        background-color: #f9f9f9;
+        padding-top: 75px;
+        padding-bottom: 100px;
+    }
+
+    &_page2 {
+        background-color: #f9f9f9;
+        padding-top: 75px;
+        padding-bottom: 219px;
+    }
+
+    &_page3 {
+        background-color: #f9f9f9;
+        padding-top: 50px;
+        padding-bottom: 169px;
+    }
 }
 
-.main_page2 {
-    background-color: #f9f9f9;
-    padding-top: 75px;
-    padding-bottom: 219px;
-}
+
+

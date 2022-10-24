@@ -1,5 +1,11 @@
 .breadcrumbs {
-    margin-bottom: 30px;
+    &_page {
+        margin-bottom: 30px;
+    }
+
+    &_basket {
+        margin-bottom: 10px;
+    }
 }
 
 .breadcrumbs_items {

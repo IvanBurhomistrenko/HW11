@@ -56,6 +56,19 @@
     line-height: 15px;
     color: #FFFFFF;
     margin-right: 15px;
+    background-image: url(../images/basket.png);
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+
+.cart:hover {
+    background-image: url(../images/basket_page/cart.png);
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
 }
 
 .user_info {
